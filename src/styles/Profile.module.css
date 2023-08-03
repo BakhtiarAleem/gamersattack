@@ -1,0 +1,80 @@
+.coverImage {
+    @apply relative h-[200px] w-full overflow-hidden bg-interface-700 bg-cover ipad:bg-center mobile:h-[120px];
+}
+.coverImage:hover.coverEdit .coverEditSection {
+    transition: 0.5s ease-in-out;
+    @apply opacity-100;
+}
+.coverImage > span {
+    @apply hidden !important;
+}
+.coverImage img {
+    @apply hidden opacity-0 !important;
+}
+.profileDetail {
+    @apply relative flex pb-6 border-b border-interface-700 mobile:flex-col mobile:pt-2;
+}
+.profileDetail .avatar {
+    @apply h-[150px] w-[150px] rounded-lg bg-cover mobile:m-auto;
+}
+.profileDetail .avatar img {
+    @apply hidden opacity-0 !important;
+}
+.profileDetail .avatar > span {
+    @apply hidden !important;
+}
+.descriptionDetails {
+    @apply w-[calc(100%-150px)] pl-6 align-top mobile:w-full mobile:pl-0 mobile:text-center;
+}
+.descriptionTitle {
+    @apply mb-3 text-3xl mobile:mb-1 mobile:mt-2.5;
+}
+.follwersTags {
+    @apply flex mobile:flex-col;
+}
+.follwersTags ul {
+    @apply relative ipad:flex-wrap;
+}
+/* .follwersTags ul:before {
+    content: '';
+    @apply absolute top-[46%] left-0 h-[4px] w-[4px] rounded-lg bg-interface-400;
+} */
+.followed {
+    @apply underline;
+}
+.followed,
+.followers {
+    @apply relative mr-[14px] inline-block cursor-pointer pr-4 underline ipad:min-w-[120px] mobile:mr-0 mobile:min-w-[90px] mobile:pr-0;
+}
+.followed:before,
+.followers:before {
+    content: '';
+    @apply absolute top-[46%] right-0 h-[4px] w-[4px] rounded-lg bg-interface-400 ipad:top-[9px] mobile:hidden;
+}
+.profileUserDetails {
+    @apply inline-block h-[420px] w-[calc(100%-221px)] overflow-auto bg-gradient-to-r from-theme-dark-500 to-theme-dark-900 align-top;
+}
+.profileContent {
+    @apply px-0 py-3;
+}
+.profileUserDetails::-webkit-scrollbar-track {
+    @apply rounded-[50px] bg-theme-dark-500;
+}
+.profileUserDetails::-webkit-scrollbar {
+    @apply h-[6px] w-[4px] rounded-[50px];
+}
+.profileUserDetails::-webkit-scrollbar-thumb {
+    @apply rounded-[50px] bg-interface-400;
+}
+.profileUserDetails li {
+    @apply py-2;
+}
+.profileUserDetails li label {
+    @apply inline-block w-[110px] text-right text-interface-400;
+}
+.profileUserDetails li p {
+    @apply inline-block w-[calc(100%-110px)] pl-3 text-left;
+}
+.usernavactive {
+    @apply rounded-md bg-theme-dark-500;
+}

@@ -1,0 +1,3 @@
+.categoryThumbnails {
+    @apply rounded-md w-[172px] h-[266px] overflow-hidden;
+}

@@ -1,0 +1,29 @@
+.newsPostImage{
+    @apply w-full;
+}
+.newsPostImage img{
+    line-height: auto;
+    @apply rounded-none w-full h-[160px] bg-cover bg-interface-100 !important;
+}
+.newsDetailContainer{
+    @apply w-full mt-5;
+}
+.newsDetailContainer h5{
+    @apply mb-3 text-lg font-normal;
+}
+.newsDetailContainer p{
+    @apply text-sm;
+}
+.fleetVairation{
+    @apply w-full;
+}
+.fleetVairation li{
+    @apply py-3 border-t border-dashed border-interface-200;
+}
+.fleetVairation li label{
+    width: calc(100% - 115px);
+    @apply inline-block text-interface-600;
+}
+.fleetVairation li p{
+    @apply inline-block mb-0 font-semibold text-right w-28;
+}

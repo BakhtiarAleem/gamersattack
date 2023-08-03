@@ -1,0 +1,182 @@
+.inputModule {
+    @apply relative;
+}
+.formGroup {
+    @apply relative mb-6;
+}
+.darkSearchbox .formGroup {
+    @apply mb-0;
+}
+.noSpace {
+    margin-bottom: 0 !important;
+}
+.formControl {
+    @apply h-[46px] w-full rounded-md border border-interface-600 bg-interface-800 px-3  text-base text-common-white placeholder:text-interface-300 focus:border-interface-300 focus:shadow-none focus:outline-none mobile:text-sm;
+}
+.formControl.md {
+    @apply h-[36px];
+}
+.formControl.withoutBorder {
+    @apply bg-transparent border-none shadow-none focus:shadow-none;
+}
+.formControl.hasError,
+.isFormcontrolError .formControl.hasError {
+    @apply border-danger-600 !important;
+}
+.uploadError .formControl {
+    @apply border-danger-600;
+}
+.formControl.dark {
+    @apply border border-interface-500 bg-interface-600 text-common-white;
+}
+.formControl.light {
+    @apply text-base border-interface-600 bg-interface-700 text-interface-400 placeholder:text-interface-300 focus:border-interface-300 focus:shadow-none focus:outline-none;
+}
+.form-control.dark i {
+    @apply text-interface-200;
+}
+textarea.formControl {
+    @apply block w-full h-auto p-3 resize-none;
+}
+.formControl.highlighted {
+    @apply bg-interface-50 text-interface-900;
+}
+.formControl.disabled {
+    @apply pointer-events-none opacity-70;
+}
+.no-form-space {
+    @apply mb-0;
+}
+.datetime {
+    @apply relative inline-block w-full;
+}
+.datetime .form-control {
+    @apply w-full;
+}
+.dataPickerRange .startDate .formControl.sm,
+.dataPickerRange .endDate .formControl.sm {
+    @apply h-9;
+}
+.phoneInput {
+    @apply relative;
+}
+.phoneInput .flagIcon {
+    @apply absolute bottom-0 text-lg left-3 top-9;
+}
+.datetime .icon-calendar {
+    @apply relative top-[-10px];
+}
+.dataPickerRange {
+    @apply flex;
+}
+.dataPickerRange .startDate,
+.dataPickerRange .endDate {
+    @apply w-2/4;
+}
+.dataPickerRange .startDate .formControl {
+    @apply rounded-tr-none rounded-br-none;
+}
+.dataPickerRange .endDate .formControl {
+    @apply ml-[-1px] rounded-tl-none rounded-bl-none;
+}
+.searchInput {
+    @apply relative inline-block w-full;
+}
+.searchInput .formGroup {
+    @apply mb-0;
+}
+.searchInput input.formControl {
+    @apply h-[36px];
+}
+.searchInput input {
+    @apply w-full mb-0 border-0 bg-interface-700 text-common-white placeholder:text-interface-300;
+}
+.form-control .searchInput i {
+    @apply text-sm;
+}
+.darkSearchbox .searchInput i {
+    @apply text-interface-200;
+}
+.thumnailWrapper {
+    @apply flex gap-4 mb-4;
+}
+.thumnail {
+    @apply relative;
+}
+.configuration-thumnail.configuration-thumnail .thumnail {
+    @apply mb-0;
+}
+.thumnail span {
+    @apply overflow-hidden rounded-lg;
+}
+.deleteImg {
+    @apply absolute flex items-center justify-center w-5 h-5 rounded-full cursor-pointer right-2 top-2 bg-common-white text-common-black;
+}
+.filePreviewAside {
+    @apply flex w-full gap-3;
+}
+.filePreviewAside .formGroup {
+    @apply w-full;
+}
+.testing.testing .formGroup {
+    @apply mb-0;
+}
+.thumbnailimage {
+    @apply object-cover w-full h-full;
+}
+.customDurationPicker {
+    @apply z-30 overflow-visible;
+}
+.customDurationPicker .icon-section {
+    @apply absolute top-0 right-0 flex items-center justify-center h-full px-3;
+}
+.customDurationPicker input {
+    letter-spacing: 3px;
+    @apply relative top-0 left-0 h-[40px] w-[34px] min-w-0 text-center  outline-none;
+}
+.durationDropdown {
+    @apply absolute top-[45px]  left-[-1px] h-[150px] w-[115px] rounded-md border border-interface-200 bg-common-white text-center shadow;
+}
+.dropdownItems li {
+    @apply cursor-pointer py-1.5 text-sm;
+}
+.dropdownItems .selected,
+.dropdownItems .active {
+    @apply font-semibold bg-interface-200 text-common-black;
+}
+.bgPlaceholder {
+    background-image: url(/storage/user-placeholder.png);
+    @apply items-center justify-center overflow-hidden bg-center bg-cover rounded-full h-9 w-9 bg-interface-700;
+}
+.custom-selectbox {
+    @apply relative;
+}
+/* switch btn */
+.switch {
+    @apply relative inline-block w-8 h-5;
+}
+.switch input {
+    @apply w-0 h-0 opacity-0;
+}
+.slider {
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    @apply absolute top-0 bottom-0 left-0 right-0 cursor-pointer bg-interface-500;
+}
+.slider:before {
+    content: '';
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    @apply absolute left-0.5 bottom-0.5 h-4 w-4 rounded-full bg-common-white;
+}
+input:checked + .slider {
+    @apply bg-primary-500;
+}
+input:checked + .slider:before {
+    -webkit-transform: translateX(12px);
+    -ms-transform: translateX(12px);
+    transform: translateX(12px);
+}
+.round {
+    @apply rounded-[34px];
+}

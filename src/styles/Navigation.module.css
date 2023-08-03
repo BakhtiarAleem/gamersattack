@@ -1,0 +1,31 @@
+.navigation {
+    @apply relative;
+}
+.navigation ul {
+    @apply relative flex items-center justify-center mobile:flex-col;
+}
+.navigation ul li {
+    @apply mr-10 text-base last-of-type:mr-0 mobile:mx-auto mobile:text-center mobile:last-of-type:mx-auto;
+}
+.navigation ul li a {
+    @apply block text-sm text-common-white hover:text-primary-400 mobile:py-2;
+}
+.navigation ul li a.active {
+    @apply text-primary-500;
+}
+.tabList {
+    @apply border-b border-interface-700;
+}
+.tabList.tabList ul {
+    @apply flex items-start justify-start mobile:flex-row;
+}
+.tabList.tabList li {
+    @apply mr-[36px] last-of-type:mr-0 mobile:mx-auto mobile:px-0;
+}
+.tabList.tabList li a {
+    @apply relative pb-[18px] text-base font-semibold text-interface-400 mobile:px-2 mobile:text-sm;
+}
+.tabList.tabList li.active a:after {
+    content: '';
+    @apply absolute left-0 right-0 bottom-0 h-[2px] w-full bg-primary-500 text-primary-800;
+}

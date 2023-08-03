@@ -1,0 +1,48 @@
+.livechatcontainer {
+    @apply sticky top-[52px] right-0 bottom-1 h-full w-full max-w-[340px] shadow-live-chat-shadow md:fixed md:w-[0px] md:bg-interface-800 mobile:top-0 mobile:z-50;
+}
+.livechatcontainer.expand {
+    @apply md:block md:w-full mobile:max-w-full;
+}
+.inner {
+    @apply fixed top-0 h-full pt-[52px] shadow-live-chat-shadow mobile:pt-0;
+}
+.livechatcontainer.viewchatcontainer {
+    @apply z-50 h-full;
+}
+.livechatheader {
+    @apply py-2 pl-4 text-base font-semibold text-left bg-theme-dark-500 mobile:pl-4 mobile:text-left;
+}
+.livechatbody {
+    @apply h-[calc(100vh-209px)] overflow-auto py-4 mobile:h-[calc(100vh-162px)];
+}
+.livechatbody.viewchatbody {
+    @apply h-[calc(100vh-168px)] overflow-auto bg-theme-dark-900 py-4;
+}
+.livechatbody.livechatbodyonline {
+    @apply h-[calc(100vh-168px)];
+}
+.livechatbody ul {
+    @apply flex flex-col-reverse h-full px-4 overflow-auto;
+}
+.livechatbody ul::-webkit-scrollbar-track {
+    @apply rounded-[50px] bg-theme-dark-900;
+}
+.livechatbody ul::-webkit-scrollbar {
+    @apply h-[6px] w-[4px] rounded-[50px];
+}
+.livechatbody ul::-webkit-scrollbar-thumb {
+    @apply rounded-[50px] bg-theme-dark-500;
+}
+.livechatbody li {
+    @apply mb-4 text-sm;
+}
+.livechatbody li span {
+    @apply mr-1 font-semibold;
+}
+.livechatfooter {
+    @apply p-3 bg-theme-dark-500;
+}
+.chatIcon {
+    @apply fixed bottom-4 right-4 hidden w-[52px] cursor-pointer  md:block;
+}

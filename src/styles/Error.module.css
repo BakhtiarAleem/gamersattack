@@ -1,0 +1,21 @@
+.errorPage {
+    @apply fixed h-screen w-full;
+}
+.errorPage .inner {
+    @apply flex h-screen w-full items-center justify-center;
+}
+.errorPage .heading {
+    @apply mb-16  font-bold text-[120px] text-primary-500;
+}
+.errorPage .subHeading {
+    @apply text-4xl ipad:text-[30px];
+}
+.errorPage .description {
+    @apply mx-auto mb-0 max-w-[700px] text-lg text-interface-400;
+}
+.mapPosition {
+    @apply flex h-screen w-full items-center justify-center;
+}
+.aeroplance {
+    @apply absolute top-[-170px] left-0 right-[-140px] mx-auto hidden w-[350px];
+}

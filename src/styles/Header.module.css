@@ -1,0 +1,3 @@
+.header {
+    @apply fixed top-0 z-[10] flex h-[52px] w-full items-center  bg-theme-dark-500 px-6 py-2 shadow-header-shadow mobile:px-3;
+}

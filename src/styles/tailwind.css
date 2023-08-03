@@ -1,0 +1,637 @@
+@tailwind base;
+@tailwind components;
+/* ================
+    Custom
+=================== */
+html {
+    @apply font-normal bg-theme-dark-900 text-common-white;
+}
+body {
+    @apply overflow-x-hidden text-sm font-normal font-theme text-common-white;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply mb-4 font-semibold;
+}
+h1,
+.h1 {
+    @apply text-3xl border-opacity-100;
+}
+.h2,
+h2 {
+    @apply text-2xl;
+}
+.h3,
+h3 {
+    @apply text-xl;
+}
+.h4,
+h4 {
+    @apply text-lg;
+}
+.h5,
+h5 {
+    @apply text-base;
+}
+.h6,
+h6 {
+    @apply text-sm;
+}
+ul {
+    @apply relative;
+}
+ol li {
+    @apply text-sm list-decimal list-inside;
+}
+a {
+    @apply text-primary-500;
+}
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+#nprogress .bar {
+    @apply bg-primary-500;
+}
+#nprogress .spinner {
+    @apply hidden;
+}
+.body-padding {
+    @apply px-6 pt-6 mobile:px-5 mobile:pt-4;
+}
+.scrollable {
+    @apply overflow-auto;
+}
+.scrollable::-webkit-scrollbar-track {
+    @apply rounded-[50px] bg-theme-dark-500;
+}
+.scrollable::-webkit-scrollbar {
+    @apply h-[6px] w-[4px] rounded-[50px];
+}
+.scrollable::-webkit-scrollbar-thumb {
+    @apply rounded-[50px] bg-theme-dark-900;
+}
+/* slider setting */
+.css-1fzpoyk {
+    @apply block w-[525px] overflow-hidden rounded-lg opacity-100 shadow-xl shadow-common-black !important;
+}
+.css-1fzpoyk .cover-photo-image {
+    @apply opacity-60;
+}
+.css-1fzpoyk[style='transform: translateY(-50%) translateX(-50%) scale(1); left: 50%; opacity: 1; z-index: 2;']
+    .cover-photo-image {
+    @apply opacity-100;
+}
+.cover-photo-image iframe {
+    @apply w-full h-full;
+}
+.main-slider > div > div {
+    @apply first-of-type:hidden last-of-type:hidden !important;
+}
+.main-slider .stream-url {
+    @apply pointer-events-none;
+}
+.main-slider
+    .css-1fzpoyk[style='transform: translateY(-50%) translateX(-50%) scale(1); left: 50%; opacity: 1; z-index: 2;']
+    .stream-url {
+    @apply pointer-events-auto;
+}
+.main-slider .css-doq0dk {
+    @apply z-[9];
+}
+/* .css-1fzpoyk[style='transform: translateY(-50%) translateX(-62.5%) scale(0.25); left: 100%; opacity: 0.0625; z-index: 1;'] {
+    @apply hidden !important;
+}
+.css-1fzpoyk[style='transform: translateY(-50%) translateX(-37.5%) scale(0.25); left: 0%; opacity: 0.0625; z-index: 1;'] {
+    @apply hidden !important;
+} */
+.css-1qzevvg {
+    @apply absolute left-0 top-0 bottom-0 mt-0 h-full w-full items-center justify-between ipad:z-[9] !important;
+}
+.css-1qzevvg:before {
+    content: url('/storage/navigation/left-arrow.svg');
+    @apply visible relative -left-[150px] w-[24px] 3xl:-left-[200px] xl:-left-[225px];
+}
+.css-1qzevvg:after {
+    content: url('/storage/navigation/right-arrow.svg');
+    @apply visible relative -right-[150px] w-[24px] 3xl:-right-[200px] xl:-right-[225px];
+}
+.css-1qzevvg img:nth-child(1) {
+    @apply absolute -left-[150px] z-[1] h-10 cursor-pointer opacity-0 3xl:-left-[200px] xl:-left-[230px];
+}
+.css-1qzevvg img:nth-child(2) {
+    @apply absolute -right-[150px] z-[1] h-10 cursor-pointer opacity-0 3xl:-right-[200px] xl:-right-[230px];
+}
+body .live-chat-input {
+    @apply pr-[50px] focus:border-interface-700;
+}
+.page-heading a {
+    @apply text-primary-500;
+}
+/* Live Streaming */
+.slider-content .video-js .vjs-big-play-button {
+    @apply hidden;
+}
+.video-js .vjs-big-play-button.vjs-big-play-button {
+    @apply mobile:absolute mobile:top-[40%] mobile:left-[45%] mobile:h-[50px] mobile:w-[50px] mobile:rounded-full mobile:border-[2px];
+}
+.video-js {
+    @apply w-full h-full aspect-video;
+}
+.video-js .vjs-tech {
+    @apply aspect-video;
+}
+body .vjs-poster {
+    @apply bg-cover;
+}
+.zoom-effect {
+    transition: transform 0.3s;
+    @apply hover:scale-105;
+}
+/* =============
+    Card
+=============== */
+.default-card {
+    background: linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 0.05),
+            rgba(255, 255, 255, 0.05)
+        ),
+        #121212;
+    @apply p-6 mb-6 rounded-md shadow-md;
+}
+.default-card.sticker-card {
+    @apply p-2.5;
+}
+.default-card-action-pos {
+    @apply absolute text-lg cursor-pointer right-4 top-4 text-interface-600;
+}
+.default-card-action-icon {
+    @apply relative p-3 text-lg cursor-pointer text-interface-600;
+}
+.dashboard-block-heading {
+    @apply mb-[10px] text-sm uppercase;
+}
+/* Custom Select */
+.default-react-select .css-1s2u09g-control {
+    @apply h-[46px] overflow-hidden rounded-md border border-interface-600 bg-interface-800 text-sm font-normal placeholder:text-interface-300 focus:border-interface-300 focus:shadow-none focus:outline-none;
+}
+.default-react-select .css-14el2xx-placeholder {
+    @apply text-base text-interface-300;
+}
+.default-react-select .css-26l3qy-menu {
+    @apply absolute top-auto left-0 z-[999] bg-interface-800 pb-0 shadow;
+}
+/* .default-react-select .css-26l3qy-menu .css-4ljt47-MenuList {
+    @apply py-0;
+} */
+.default-react-select .css-1n7v3ny-option {
+    @apply bg-interface-700;
+}
+.default-react-select .css-319lph-ValueContainer {
+    @apply bg-interface-800 px-[12px] py-[8px] focus:border-interface-300;
+}
+.default-react-select .css-1n7v3ny-option:active {
+    @apply bg-interface-900;
+}
+.default-react-select .css-1rhbuit-multiValue {
+    @apply rounded-[4px] bg-interface-700 text-common-white;
+}
+.default-react-select .css-12jo7m5 {
+    @apply text-common-white;
+}
+.default-react-select .css-1pahdxg-control {
+    @apply h-[46px] rounded-md border-interface-600 bg-interface-800 shadow-none outline-none focus:border-interface-600;
+}
+.default-react-select .css-xb97g8 {
+    @apply hover:bg-transparent hover:text-common-white;
+}
+.default-react-select .css-1hb7zxy-IndicatorsContainer {
+    @apply hidden;
+}
+.default-react-select .css-1pndypt-Input {
+    @apply text-base font-normal text-common-white placeholder:text-interface-400 focus:border-interface-300 focus:shadow-none focus:outline-none;
+}
+/* phone field */
+.PhoneInputCountry.PhoneInputCountry {
+    @apply hidden;
+}
+.PhoneInputInput.PhoneInputInput {
+    @apply bg-transparent py-[8px] outline-none placeholder:text-interface-400;
+}
+/* =============
+    Datepicker
+=============== */
+.custom-date-time .react-datepicker-wrapper {
+    @apply h-[46px];
+}
+/* .date-picker-form-control input, .PhoneInput input{
+    @apply h-[46px] w-full rounded-md border border-interface-600 bg-interface-800 px-3 pb-[4px] text-base text-common-white placeholder:text-interface-400 focus:border-interface-300 focus:shadow-none focus:outline-none;
+} */
+.custom-date-time .react-datepicker__input-container input {
+    @apply h-full w-full bg-transparent pb-1.5 font-normal outline-none placeholder:text-interface-400;
+}
+.custom-date-time .react-datepicker__input-container {
+    @apply w-full h-full;
+}
+.custom-date-time .react-datepicker__header {
+    @apply border-b border-interface-600 bg-interface-900 text-common-white;
+}
+.custom-date-time .react-datepicker__current-month,
+.custom-date-time .react-datepicker__day-name {
+    @apply text-common-white;
+}
+.custom-date-time .react-datepicker,
+.custom-date-time .react-datepicker__year-dropdown,
+.custom-date-time .react-datepicker__month-dropdown,
+.custom-date-time .react-datepicker__month-year-dropdown {
+    @apply border border-interface-600 bg-interface-800 text-common-white;
+}
+.custom-date-time .react-datepicker__day {
+    @apply text-common-white;
+}
+.custom-date-time
+    .react-datepicker-popper[data-placement^='bottom']
+    .react-datepicker__triangle::before,
+.custom-date-time
+    .react-datepicker-popper[data-placement^='bottom']
+    .react-datepicker__triangle::after {
+    @apply border-b-interface-600;
+}
+.custom-date-time .react-datepicker__year-read-view--down-arrow {
+    @apply hidden;
+}
+.custom-date-time .react-datepicker__day--keyboard-selected,
+.custom-date-time .react-datepicker__month-text--keyboard-selected,
+.custom-date-time .react-datepicker__quarter-text--keyboard-selected,
+.custom-date-time .react-datepicker__year-text--keyboard-selected,
+.custom-date-time .react-datepicker__day--selected,
+.custom-date-time .react-datepicker__day--in-selecting-range,
+.custom-date-time .react-datepicker__day--in-range,
+.custom-date-time .react-datepicker__month-text--selected,
+.custom-date-time .react-datepicker__month-text--in-selecting-range,
+.custom-date-time .react-datepicker__month-text--in-range,
+.custom-date-time .react-datepicker__quarter-text--selected,
+.custom-date-time .react-datepicker__quarter-text--in-selecting-range,
+.custom-date-time .react-datepicker__quarter-text--in-range,
+.custom-date-time .react-datepicker__year-text--selected,
+.custom-date-time .react-datepicker__year-text--in-selecting-range,
+.custom-date-time .react-datepicker__year-text--in-range {
+    @apply bg-primary-500;
+}
+.custom-date-time .react-datepicker__day,
+.custom-date-time .react-datepicker__month-text,
+.custom-date-time .react-datepicker__quarter-text,
+.custom-date-time .react-datepicker__year-text {
+    @apply hover:bg-interface-500;
+}
+.custom-date-time .react-datepicker__year-option,
+.custom-date-time .react-datepicker__month-option,
+.custom-date-time .react-datepicker__month-year-option {
+    @apply py-[5px] hover:bg-interface-500;
+}
+.custom-date-time .react-datepicker__navigation--years-upcoming,
+.custom-date-time .react-datepicker__navigation--years-previous {
+    @apply relative;
+}
+.custom-date-time .react-datepicker__navigation--years-upcoming:after,
+.custom-date-time .react-datepicker__navigation--years-previous:after {
+    content: '';
+    @apply absolute right-0 left-[9px] top-3.5 h-[10px] w-[10px] -rotate-45 border-t-[3px] border-r-[3px] border-solid border-common-white;
+}
+.custom-date-time .react-datepicker__navigation--years-previous:after {
+    @apply bottom-4 top-auto rotate-[134deg];
+}
+/* =============
+    Table Placeholder
+=============== */
+.table-placeholder {
+    @apply font-redacted;
+}
+.table-placeholder .rdt_Table .rdt_TableBody .rdt_TableRow.rdt_TableRow {
+    @apply font-redacted text-interface-700;
+}
+.table-placeholder .rdt_TableHead {
+    @apply flex flex-col items-center justify-center w-full h-full;
+}
+.table-placeholder .rdt_TableCol {
+    @apply w-auto;
+}
+.table-placeholder .rdt_TableBody {
+    @apply flex flex-col;
+}
+.table-placeholder .rdt_TableCell {
+    @apply w-auto;
+}
+.table-font-small .rdt_TableHeadRow div {
+    @apply text-xs;
+}
+.default-react-select .css-26l3qy-menu div div {
+    @apply max-h-[calc(100vh-290px)] border-b border-interface-700 pb-[10px] last-of-type:border-0;
+}
+.table-placeholder.table-placeholder .rdt_TableCell div {
+    @apply whitespace-nowrap;
+}
+.table-placeholder
+    .rdt_Table
+    .rdt_TableHead
+    .rdt_TableHeadRow
+    .rdt_TableCol.rdt_TableCol,
+.table-placeholder a,
+.table-placeholder .status-loader {
+    @apply font-redacted text-interface-700;
+}
+.table-placeholder .status-loader.status-loader {
+    @apply text-opacity-0 bg-interface-700;
+}
+.rdt_Table .rdt_TableCell {
+    @apply px-2;
+}
+.table-placeholder .rdt_Table .rdt_TableCell {
+    @apply animate-pulse font-redacted text-interface-700;
+}
+.table-placeholder .rdt_TableHeadRow {
+    @apply flex items-center w-full text-theme-dark-100;
+}
+.table-placeholder .rdt_TableRow {
+    @apply flex h-[45px] w-full items-center justify-center;
+}
+.dropdown-button i {
+    @apply relative top-[2px] left-[6px] text-common-black;
+}
+.table-placeholder.table-placeholder i {
+    @apply inline-block w-4 h-4 text-opacity-0 animate-pulse bg-interface-700;
+}
+.table-placeholder.table-placeholder.table-placeholder img,
+.table-placeholder.table-placeholder.table-placeholder .text-placeholder {
+    @apply hidden !important;
+}
+.secondary-modal h2 span {
+    @apply text-base font-semibold text-left;
+}
+.text-placeholders,
+.content-placeholders-animation,
+.content-placeholders-animation .status-loader.status-loader,
+.text-placeholders .status-loader.status-loader,
+.table-placeholder.table-placeholder .btn div span,
+.table-placeholder.table-placeholder .user-streamer {
+    @apply animate-pulse font-redacted text-interface-700;
+}
+/* =============
+    Dropdown
+=============== */
+.dropdown-button {
+    @apply inline-flex w-full;
+}
+.dropdown-menu {
+    @apply absolute right-0 mt-3 w-[168px] overflow-hidden rounded-b-[4px] border border-interface-600 bg-interface-700 shadow-md focus:outline-none;
+}
+.dropdown-link.dropdown-link {
+    @apply items-start justify-start px-4 font-normal rounded-none hover:bg-theme-dark-500;
+}
+.dropdown-menu.dropdown-menu a {
+    @apply text-sm font-normal text-common-white;
+}
+/* .dropdown-menu.dropdown-menu a.active {
+    @apply font-normal bg-primary-500;
+} */
+.dropdown-menu a::after {
+    @apply hidden;
+}
+.dropdown-button i.icon-kebab {
+    @apply text-common-white;
+}
+/* scondary modal */
+.secondary-modal {
+    @apply overflow-hidden rounded-md bg-interface-700;
+}
+.sticker-title {
+    background: linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 0.05),
+            rgba(255, 255, 255, 0.05)
+        ),
+        #121212;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.12),
+        0px 1px 3px rgba(0, 0, 0, 0.2);
+    @apply px-4 py-3 mb-0 text-base font-semibold rounded-tl-md rounded-tr-md;
+}
+.secondary-modal .btnClose {
+    @apply absolute right-4 top-[5px];
+}
+.secondary-modal .default-card {
+    @apply mb-0 border border-interface-700 bg-theme-dark-100 p-[7px];
+}
+.input-thumbnail {
+    @apply absolute left-0 z-10 w-full h-full opacity-0 cursor-pointer;
+}
+.input-thumbnail:checked + .default-card {
+    @apply border cursor-pointer border-primary-500 bg-theme-dark-900;
+}
+.input-thumbnail:checked + .default-card .amount {
+    @apply text-primary-500;
+}
+.input-thumbnail:checked + .default-card .amount span {
+    @apply text-common-white;
+}
+.live-chat-message {
+    @apply pointer-events-none;
+}
+.live-chat-message.live-chat-online {
+    @apply cursor-pointer pointer-events-auto;
+}
+.live-chat-message.live-chat-online .live-chat-input {
+    @apply bg-interface-700;
+}
+.static-pages-body-padding {
+    @apply px-5 pt-4 pb-8 mobile:pb-4;
+}
+.static-pages-main-heading {
+    @apply text-3xl mobile:text-2xl;
+}
+.static-pages h1,
+.static-pages h2,
+.static-pages h3,
+.static-pages h4,
+.static-pages h5,
+.static-pages h6 {
+    @apply mb-2 text-interface-100;
+}
+.static-pages h1 {
+    @apply mb-10 text-4xl;
+}
+.static-pages h2 {
+    @apply text-3xl;
+}
+.static-pages h3 {
+    @apply text-2xl;
+}
+.static-pages h4 {
+    @apply text-xl;
+}
+.static-pages h5 {
+    @apply text-lg;
+}
+.static-pages h6 {
+    @apply text-base;
+}
+.static-pages ul {
+    @apply mb-8 text-interface-100;
+}
+.static-pages ul li {
+    @apply mb-1 ml-8 text-sm list-disc last-of-type:mb-0;
+}
+.static-pages ol li {
+    @apply mb-1 ml-6 last-of-type:mb-0;
+}
+.static-pages p {
+    @apply mb-6 text-sm text-interface-100 last-of-type:mb-0;
+}
+figure#JoL-player-container {
+    @apply w-full !important;
+}
+.JoL-controller-container .play-icon {
+    @apply left-[25px] top-[25px] !important;
+}
+.JoL-controls-container .JoL-multifunction-multiple > p {
+    display: none;
+}
+.JoL-multifunction-volume {
+    @apply absolute left-[130px] !important;
+}
+.JoL-controls-container
+    .JoL-multifunction-multiple
+    .JoL-multifunction-multiple-container {
+    @apply relative top-0 left-0 block h-[auto] translate-x-0 !important;
+}
+.JoL-controls-container .JoL-multifunction-multiple-layer {
+    @apply relative top-0 left-0 flex translate-x-0 overflow-hidden rounded bg-interface-700 !important;
+}
+.JoL-controls-container .JoL-multifunction-multiple-layer li {
+    @apply block whitespace-normal px-2 py-[2px] !important;
+}
+.JoL-controls-container .JoL-multifunction-multiple-layer li:hover {
+    @apply bg-theme-dark-900 text-common-white !important;
+}
+.JoL-controls-container .JoL-multifunction-multiple-layer li p {
+    @apply inline-block text-sm font-semibold;
+}
+.JoL-controls-container .JoL-multifunction-multiple-layer li p:first-child {
+    @apply hidden !important;
+}
+.accordion__heading > div[aria-disabled='true'] .icon-down-arrow {
+    @apply block rotate-180;
+}
+.tabs-navigation ul li:first-child a {
+    @apply pointer-events-auto text-primary-500;
+}
+.tabs-navigation ul li:first-child a:after {
+    content: '';
+    @apply absolute left-0 right-0 bottom-0 h-[2px] w-full bg-primary-500 text-primary-800;
+}
+.carousel-item-padding-40-px {
+    @apply pr-4;
+}
+/* Table */
+.base-table {
+    @apply overflow-hidden border rounded-sm border-theme-dark-100;
+}
+.base-table.overflow-none {
+    @apply overflow-visible;
+}
+.base-table.overflow-none .gelpCx {
+    @apply overflow-visible;
+}
+.style-table-two .rdt_TableHeadRow {
+    @apply border-interface-700;
+}
+.style-table-two.header-hidden .rdt_TableHeadRow {
+    @apply hidden;
+}
+.rdt_Table .rdt_TableRow {
+    @apply min-h-[40px] bg-theme-dark-900 text-common-white even:bg-theme-dark-500;
+}
+.style-table-two .base-table .rdt_TableRow {
+    @apply py-2 border-interface-700 bg-theme-dark-100;
+}
+.style-table-two.header-hidden .rdt_Table .rdt_TableRow {
+    @apply min-h-[52px];
+}
+.rdt_Table .rdt_TableHead .rdt_TableHeadRow {
+    @apply min-h-[36px] bg-theme-dark-100;
+}
+.rdt_Table .rdt_TableHead .rdt_TableCol {
+    @apply px-2 text-sm font-semibold normal-case bg-theme-dark-100 text-common-white;
+}
+.table-dropdown {
+    @apply absolute right-0 z-[1] mt-[5px] w-[178px] origin-top-right overflow-hidden rounded-[4px] rounded-t-none bg-interface-700 shadow-lg outline-none focus:outline-none;
+}
+.rdt_Table .rdt_TableRow:nth-last-child(-n + 5) .table-dropdown {
+    @apply top-auto bottom-[34px] mt-0 rounded-t-[4px] rounded-b-none;
+}
+.color-white-text tspan {
+    @apply fill-common-white;
+}
+.card-lists {
+    @apply p-2 mb-1 border rounded-md cursor-pointer border-theme-dark-500 bg-theme-dark-500 last-of-type:mb-0 hover:border-primary-500 hover:bg-interface-900;
+}
+.card-lists.profile-card {
+    @apply bg-theme-dark-100;
+}
+.delete-section {
+    @apply absolute top-0 right-0 flex items-center justify-center w-5 h-5 rounded-full bg-theme-dark-900 text-interface-500;
+}
+.selected-option .delete-section {
+    @apply bg-live text-common-white;
+}
+.card-lists:hover .delete-section {
+    @apply bg-live text-common-white;
+}
+.delete-list {
+    @apply text-interface-500;
+}
+.bg-drop {
+    @apply absolute top-0 left-0 flex items-center justify-center w-full h-full overflow-hidden opacity-0 cursor-move bg-common-black;
+}
+.card-lists:hover .delete-list {
+    @apply text-common-white;
+}
+.selected-option .bg-drop,
+.card-lists:hover .bg-drop {
+    @apply opacity-70;
+}
+.selected-option {
+    @apply border-primary-500 bg-interface-900;
+}
+.icon-bullet {
+    @apply h-[6px] w-[6px] rounded-md border-0 bg-common-white;
+}
+.style-table-two .base-table {
+    @apply px-4 pt-3 rounded-xl bg-theme-dark-100;
+}
+.style-table-two .base-table .sc-bcXHqe.kVrXuC.rdt_Table,
+.style-table-two .base-table .sc-bcXHqe.begmQT.rdt_Table {
+    @apply bg-theme-dark-100;
+}
+.style-table-two .base-table .eSTlnH {
+    @apply bg-transparent;
+}
+.live-status.live-status {
+    @apply ipad:h-[23px];
+}
+.update-btn.update-btn {
+    @apply px-2 ipad:h-[23px] ipad:text-xs;
+}
+.stream-statistics-section .stream-title {
+    @apply ipad:text-lg mobile:mt-1 mobile:text-sm;
+}
+.stream-statistics-section .stream-description {
+    @apply ipad:text-sm mobile:text-xs;
+}
+
+@tailwind utilities;

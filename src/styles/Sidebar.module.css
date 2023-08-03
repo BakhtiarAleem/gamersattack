@@ -1,0 +1,15 @@
+.sidebarContainer {
+    @apply relative h-screen w-[240px] flex-shrink-0 ipad:fixed ipad:z-10 ipad:w-[0px] ipad:flex-shrink mobile:w-0;
+}
+.sidebar {
+    @apply fixed top-0 inline-block h-screen w-[240px] bg-theme-dark-100 pt-[52px] shadow-sidebar-shadow ipad:absolute ipad:bottom-0 ipad:top-auto ipad:m-auto ipad:h-[100%] ipad:w-[0] ipad:pt-0;
+}
+.sidebarContainer.expand {
+    @apply w-[62px] ipad:top-[52px] ipad:h-[calc(100vh-52px)] ipad:w-[300px] mobile:top-0 mobile:z-20 mobile:h-[100vh] mobile:w-full mobile:bg-interface-900;
+}
+.sidebar.expand {
+    @apply w-[62px] ipad:top-[0px] ipad:w-[300px] mobile:z-20 mobile:w-full mobile:bg-interface-900;
+}
+.sidebarLogo {
+    @apply mt-[6px] w-full text-center ipad:hidden;
+}

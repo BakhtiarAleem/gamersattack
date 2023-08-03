@@ -1,0 +1,36 @@
+.channelContainer {
+    @apply mt-4 h-[calc(100%-22px)] overflow-auto text-common-white mobile:mt-0 mobile:h-[calc(100%-66px)];
+}
+.channelListHeading {
+    @apply px-4 text-xs font-semibold ipad:hidden;
+}
+.channelListHeading.expand {
+    @apply hidden ipad:block mobile:block;
+}
+.coverPhoto {
+    @apply h-[300px] w-full bg-cover mobile:h-auto;
+}
+.channelImage {
+    @apply inline-block h-[30px] w-[30px] overflow-hidden rounded-full bg-interface-600 bg-cover;
+}
+.channelDetail {
+    @apply relative inline-block w-[calc(100%-32px)] pl-2 text-left;
+}
+.channelDetail h5 {
+    @apply mb-0 text-[13px];
+}
+.channelItem {
+    @apply relative mb-1 cursor-pointer py-[7px] px-4 hover:bg-theme-dark-500 mobile:h-[60px] mobile:px-2;
+}
+.channelLink a {
+    @apply absolute top-0 left-0 z-[1] h-full w-full;
+}
+.channelItem p {
+    @apply text-xs text-interface-300;
+}
+.channelViews {
+    @apply absolute top-[2px] right-0 text-xs mobile:top-[6px];
+}
+.channelDetail.expand {
+    @apply hidden ipad:inline-block;
+}

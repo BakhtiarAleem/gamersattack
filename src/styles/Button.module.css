@@ -1,0 +1,89 @@
+.btn {
+    @apply relative flex h-[46px] flex-shrink-0 items-center justify-center  overflow-hidden rounded-md border text-center text-base text-interface-700  outline-0 focus:ring-0 mobile:text-sm;
+}
+.btn .labelText {
+    @apply font-theme leading-[36px] mobile:text-sm;
+}
+.btn.sm {
+    @apply h-[36px] rounded-md pb-[1px] text-sm;
+}
+.btn.md {
+    @apply h-12 text-lg;
+}
+.btn.base {
+    @apply text-sm h-9;
+}
+.btn.other {
+    @apply h-[41px];
+}
+.btn.xs {
+    @apply h-[42px] px-3.5 text-sm;
+}
+.primary.primary {
+    @apply transition-all border-transparent shadow-md bg-primary-500 text-common-white hover:bg-primary-700;
+}
+.secondary.secondary {
+    @apply border-0 bg-interface-700 text-common-white hover:border-interface-700;
+}
+.success.success {
+    @apply bg-success-600 text-common-white hover:bg-success-700;
+}
+.live.live {
+    @apply border-none bg-[#EC001F] uppercase text-common-white;
+}
+.gray.gray {
+    @apply bg-interface-400 text-common-white hover:bg-interface-400;
+}
+.light-gray.light-gray {
+    @apply text-sm border-interface-500 bg-interface-500 text-interface-200 hover:bg-interface-500;
+}
+.outline.outline {
+    @apply border-primary-500 bg-primary-100 text-primary-500;
+}
+.outline-interface.outline-interface {
+    @apply bg-transparent shadow-sm border-interface-200 text-interface-600;
+}
+.outline-secondary.outline-secondary {
+    @apply border-interface-700 bg-interface-800 text-common-white;
+}
+.dark.dark {
+    @apply border-interface-600 bg-interface-600 text-interface-200;
+}
+.white.white {
+    @apply bg-common-white text-interface-800;
+}
+.link.link {
+    @apply h-auto border-0 py-0.5 text-interface-300;
+}
+.btn.link-xs span {
+    @apply py-[3px] text-sm font-normal text-common-white;
+}
+.btn.link-sm span {
+    @apply py-1 text-sm text-common-white;
+}
+.btn .text-justify-start {
+    @apply justify-start;
+}
+.btn .iconPosition.right {
+    @apply flex-row-reverse;
+}
+.btn .iconPosition.right i {
+    @apply ml-3 mr-0;
+}
+.btn .spinner {
+    @apply absolute left-0 right-0 w-6 m-auto opacity-0 top-2;
+}
+.btn.loading,
+.btn[loading] {
+    @apply text-transparent border-transparent pointer-events-none bg-interface-100;
+}
+.btn.loading .spinner {
+    @apply opacity-100;
+}
+.btn.loading .labelText {
+    @apply opacity-0;
+}
+.btn.disabled,
+.btn[disabled] {
+    @apply pointer-events-none opacity-70;
+}

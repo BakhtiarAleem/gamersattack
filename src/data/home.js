@@ -1,0 +1,228 @@
+export const home = {
+    slides: [
+        {
+            coverImage: '/storage/cover/1.jpg',
+            profileImage: '/storage/profile/1.jpg',
+            title: 'Maddiesuun',
+            description: 'Free Fire',
+            views: '12.5K viewers',
+            profileUrl: '/profile/1/',
+            liveStreamUrl: '/streamer/gaming/live/guardian/',
+            liveVideo: '/storage/videos-live-streaming/smashbros.mp4',
+        },
+        {
+            coverImage: '/storage/cover/2.jpg',
+            profileImage: '/storage/profile/4.jpg',
+            title: 'Karachi Vines',
+            description: 'PUBG',
+            views: '8.3K viewers',
+            profileUrl: '/profile/1/',
+            liveStreamUrl: '/streamer/gaming/live/guardian/',
+        },
+        {
+            coverImage: '/storage/cover/3.jpg',
+            profileImage: '/storage/profile/5.jpg',
+            title: 'Maddiesuun',
+            description: 'GTA V',
+            views: '6.1K viewers',
+            profileUrl: '/profile/1/',
+            liveStreamUrl: '/streamer/gaming/live/guardian/',
+        },
+        {
+            coverImage: '/storage/cover/4.jpg',
+            profileImage: '/storage/profile/3.jpg',
+            title: 'Merciless Medic',
+            description: 'Super People',
+            views: '15.5K viewers',
+            profileUrl: '/profile/1/',
+            liveStreamUrl: '/streamer/gaming/live/guardian/',
+        },
+        {
+            coverImage: '/storage/cover/5.jpg',
+            profileImage: '/storage/profile/2.jpg',
+            title: 'Ducky Extra',
+            description: 'Battlegrounds Mobile',
+            views: '13.5K viewers',
+            profileUrl: '/profile/1/',
+            liveStreamUrl: '/streamer/gaming/live/guardian/',
+        },
+        {
+            coverImage: '/storage/cover/2.jpg',
+            profileImage: '/storage/profile/4.jpg',
+            title: 'Karachi Vines',
+            description: 'PUBG',
+            views: '8.3K viewers',
+            profileUrl: '/profile/1/',
+            liveStreamUrl: '/streamer/gaming/live/guardian/',
+        },
+        {
+            coverImage: '/storage/cover/3.jpg',
+            profileImage: '/storage/profile/5.jpg',
+            title: 'Maddiesuun',
+            description: 'GTA V',
+            views: '6.1K viewers',
+            profileUrl: '/profile/1/',
+            liveStreamUrl: '/streamer/gaming/live/guardian/',
+        },
+    ],
+    categories: [
+        {
+            image: '/storage/category/apex-legends.jpg',
+            title: 'Apex Legends',
+            viewers: '69.7K viewers',
+        },
+        {
+            image: '/storage/category/grand-theft-auto-iii.jpg',
+            title: 'Grand Theft Auto V',
+            viewers: '42.3K viewers',
+        },
+        {
+            image: '/storage/category/valorant.jpg',
+            title: 'Valorant',
+            viewers: '28.8K viewers',
+        },
+        {
+            image: '/storage/category/dota-2.jpg',
+            title: 'Dota 2',
+            viewers: '22.1K viewers',
+        },
+        {
+            image: '/storage/category/pubg-mobile.jpg',
+            title: 'PUBG Mobile',
+            viewers: '25.2K viewers',
+        },
+        {
+            image: '/storage/category/garena-free-fire.jpg',
+            title: 'Garena Free Fire MAX',
+            viewers: '24.6K viewers',
+        },
+    ],
+    streams: [
+        {
+            image: '/storage/streams/1.png',
+            profile: '/storage/user/1.png',
+            title: 'Chill Live Stream until we..',
+            description: 'FAROOQAHMADyt',
+        },
+        {
+            image: '/storage/streams/2.png',
+            profile: '/storage/user/2.png',
+            title: 'Spider-man PS4 - Film Jeu..',
+            description: 'GameMovieLand',
+        },
+        {
+            image: '/storage/streams/3.png',
+            profile: '/storage/user/3.png',
+            title: 'I can steal power, minecraft',
+            description: 'Ujjwal',
+        },
+        {
+            image: '/storage/streams/4.png',
+            profile: '/storage/user/1.png',
+            title: 'Lucky Crate Opening',
+            description: 'FAROOQAHMADyt',
+        },
+    ],
+    streamers: [
+        {
+            image: '/storage/top-stream/1.png',
+            title: 'Qayzer',
+            followers: '32.5K followers',
+        },
+        {
+            image: '/storage/top-stream/2.png',
+            title: 'MrJayPlays',
+            followers: '29.4K followers',
+        },
+        {
+            image: '/storage/top-stream/3.png',
+            title: 'GamerVfx',
+            followers: '28.4K followers',
+        },
+        {
+            image: '/storage/top-stream/4.png',
+            title: 'Predator',
+            followers: '26.9K followers',
+        },
+        {
+            image: '/storage/top-stream/5.png',
+            title: 'KhanSaab69',
+            followers: '21.5K followers',
+        },
+        {
+            image: '/storage/top-stream/6.png',
+            title: 'Ragnar',
+            followers: '20.1K followers',
+        },
+        {
+            image: '/storage/top-stream/7.png',
+            title: 'Merciless Me..',
+            followers: '18.3K followers',
+        },
+        {
+            image: '/storage/top-stream/8.png',
+            title: 'Dr. Pikachu',
+            followers: '17.8K followers',
+        },
+    ],
+    gamesStreams: [
+        {
+            title: 'Top <a href="/category/dota2">Dota 2</a> Live Streams',
+            topGames: [
+                {
+                    image: '/storage/streams/5.png',
+                    profile: '/storage/user/4.png',
+                    title: 'Nigma vs Boom',
+                    description: 'familyoftwo',
+                },
+                {
+                    image: '/storage/streams/6.png',
+                    profile: '/storage/user/5.png',
+                    title: 'Raven Phantom Assassin',
+                    description: 'OneShotKi11',
+                },
+                {
+                    image: '/storage/streams/7.png',
+                    profile: '/storage/user/6.png',
+                    title: 'Ancients League S2',
+                    description: 'donta4meow',
+                },
+                {
+                    image: '/storage/streams/8.png',
+                    profile: '/storage/user/7.png',
+                    title: 'Ultras Dota Pro League Sea..',
+                    description: 'Khalil4Kill',
+                },
+            ],
+        },
+        {
+            title: 'Top <a href="/category/valorant">valorant</a> Live Streams',
+            topGames: [
+                {
+                    image: '/storage/streams/9.png',
+                    profile: '/storage/user/1.png',
+                    title: "Pakistan's Best Valorant..",
+                    description: 'FAROOQAHMADyt',
+                },
+                {
+                    image: '/storage/streams/10.png',
+                    profile: '/storage/user/2.png',
+                    title: 'Valorant Rank Grind',
+                    description: 'GameMovieLand',
+                },
+                {
+                    image: '/storage/streams/11.png',
+                    profile: '/storage/user/8.png',
+                    title: 'Valorant Ranked | Live PK',
+                    description: 'Evilpk',
+                },
+                {
+                    image: '/storage/streams/12.png',
+                    profile: '/storage/user/9.png',
+                    title: 'Lucky Crate Opening',
+                    description: 'AsmaAmna',
+                },
+            ],
+        },
+    ],
+}
